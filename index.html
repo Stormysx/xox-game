@@ -1,0 +1,222 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>XOX Oyunu</title>
+  <style>
+    /* Temel stil ayarları */
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+      background-color: #f2f2f2;
+    }
+
+    body {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      height: 100vh;
+      background-color: #f7f7f7;
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    }
+
+    .container {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      background-color: #ffffff;
+      box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+      padding: 30px;
+      border-radius: 5px;
+    }
+
+    h1 {
+      font-size: 28px;
+      margin-bottom: 20px;
+    }
+
+    .board {
+      display: flex;
+      flex-wrap: wrap;
+      width: 300px;
+      height: 300px;
+      margin-bottom: 20px;
+    }
+
+    .cell {
+      box-sizing: border-box;
+      border: 1px solid #ccc;
+      width: 100px;
+      height: 100px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 48px;
+      cursor: pointer;
+      transition: background-color 0.3s ease;
+    }
+
+    .cell.X {
+      color: #f44336;
+    }
+
+    .cell.O {
+      color: #2196f3;
+    }
+
+    .message {
+      text-align: center;
+      font-size: 24px;
+      margin-bottom: 20px;
+    }
+
+    .play-again-button {
+      padding: 10px 20px;
+      background-color: #4caf50;
+      color: #ffffff;
+      border: none;
+      border-radius: 5px;
+      font-size: 18px;
+      cursor: pointer;
+      transition: background-color 0.3s ease;
+    }
+
+    .play-again-button:hover {
+      background-color: #45a049;
+    }
+
+    .button-container {
+      display: flex;
+      justify-content: center;
+      margin-top: 20px;
+    }
+
+    .button {
+      display: inline-block;
+      border-radius: 4px;
+      background-color: #f4511e;
+      border: none;
+      position: absolute;
+      top: 655px;
+      left: 550px;
+      color: #FFFFFF;
+      text-align: center;
+      font-size: 28px;
+      padding: 19px;
+      width: 150px;
+      transition: all 0.5s;
+      cursor: pointer;
+      margin: 5px;
+    }
+
+    .button span {
+      cursor: pointer;
+      display: inline-block;
+      position: relative;
+      transition: 0.5s;
+    }
+
+    .button span:after {
+      content: '\00bb';
+      position: absolute;
+      opacity: 0;
+      top: 0;
+      right: -20px;
+      transition: 0.5s;
+    }
+
+    .button:hover span {
+      padding-right: 25px;
+    }
+
+    .button:hover span:after {
+      opacity: 1;
+      right: 0;
+    }
+
+    footer {
+      background-color: #f2f2f2;
+      padding: 20px;
+      text-align: center;
+      font-size: 14px;
+      position: fixed;
+      bottom: 0;
+      left: 0;
+      width: 100%;
+    }
+
+    footer p {
+      margin-bottom: 10px;
+    }
+
+    footer nav ul {
+      list-style-type: none;
+      padding: 0;
+    }
+
+    footer nav ul li {
+      display: inline-block;
+      margin-right: 10px;
+    }
+
+    footer nav ul li a {
+      color: #333;
+      text-decoration: none;
+    }
+
+    footer nav ul li a:hover {
+      text-decoration: underline;
+    }
+    
+  </style>
+</head>
+<body>
+  <div class="container">
+    <h1><center><img src="https://cdn3.emoji.gg/emojis/5452-gaming.gif" width="64px" height="64px"></center>XOX Oyunu</h1>
+    <div class="board">
+      <div class="cell"></div>
+      <div class="cell"></div>
+      <div class="cell"></div>
+      <div class="cell"></div>
+      <div class="cell"></div>
+      <div class="cell"></div>
+      <div class="cell"></div>
+      <div class="cell"></div>
+      <div class="cell"></div>
+    </div>
+
+    <div class="message"></div>
+    <button class="play-again-button">Tekrar Oyna</button>
+  </div>
+
+  <div class="button-container">
+    <a href="/zor.html">
+      <button class="button" style="vertical-align:middle"><span>Zor Mod</span></button>
+    </a>
+  </div>
+
+  <script src="normalscript.js"></script>
+
+<html>
+<head>
+  <link rel="stylesheet" type="text/css" href="footer.css">
+</head>
+<body>
+  <header>
+    <!-- Sayfa içeriği -->
+  </header>
+
+<footer id="transparentFooter">
+    <p class="footerText">
+      Made by <a href="https://github.com/QuarkDevelopmentt" id="link1">Quark Development</a> with &lt;3. Open-source on <a href="https://github.com/Stormysx/xox-game" id="link2">GitHub</a>.
+    </p>
+  </footer>
+
+  <script src="footer.js"></script>
+</body>
+</html>
+
+</body>
+</html>
+
